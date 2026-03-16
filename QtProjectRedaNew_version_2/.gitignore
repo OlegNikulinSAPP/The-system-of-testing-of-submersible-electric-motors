@@ -1,0 +1,31 @@
+# Сборка и временные файлы
+build/
+*-build-desktop/
+debug/
+release/
+*.o
+*.obj
+*.exe
+*.dll
+*.a
+*.lib
+*.so
+*.dylib
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+*.user
+*.user.*
+*.autosave
+
+# Qt Creator
+*.creator.user*
+*.config
+*.includes
+*.autosave
+*.session
+*.creator
+
+# Папки сборки
+*/build-*/

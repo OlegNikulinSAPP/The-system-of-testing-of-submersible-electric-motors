@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>window_experience_6</class>
+ <widget class="QDialog" name="window_experience_6">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>460</width>
+    <height>272</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="lineEdit_AccelerationVoltage_Fact">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Направление вращения</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Измеренное</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QComboBox" name="comboBox_AccelerationVoltage_direction">
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Правое</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Левое</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Номинальное</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QPushButton" name="pushButton_AccelerationVoltage_stop">
+       <property name="text">
+        <string>СТОП</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="2">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Напряжение трогания&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0">
+      <widget class="QCheckBox" name="checkBox_second_run_in">
+       <property name="text">
+        <string>Вторя обкатка</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>Результат</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLineEdit" name="lineEdit_AccelerationVoltage_Result">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="1">
+      <widget class="QPushButton" name="pushButton_AccelerationVoltage_save">
+       <property name="text">
+        <string>Сохранить</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QPushButton" name="pushButton_AccelerationVoltage_start">
+       <property name="text">
+        <string>Начать тест</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLineEdit" name="lineEdit_AccelerationVoltage_Nominal">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QCheckBox" name="checkBox_first_run_in">
+       <property name="text">
+        <string>Первая обкатка</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>Напряжение трансформатора на высокой стороне, В</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="lineEdit_high_voltage">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

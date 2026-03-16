@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>window_experience_7</class>
+ <widget class="QDialog" name="window_experience_7">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>514</width>
+    <height>380</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="5" column="2">
+      <widget class="QLineEdit" name="lineEdit_vibration_nominal">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Потери холостого хода, кВт</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QLineEdit" name="lineEdit_vibrationBQ3_fact">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QLineEdit" name="lineEdit_vibrationBQ5_fact">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>Результат:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="lineEdit_losses_fact">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QLineEdit" name="lineEdit_losses_nominal">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="0">
+      <widget class="QLabel" name="label_15">
+       <property name="text">
+        <string>Температура, гр. С</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Напряжение</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLineEdit" name="lineEdit_vibrationBQ1_fact">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>Вибрация BQ2, мм/с</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="3" rowspan="2">
+      <widget class="QLineEdit" name="lineEdit_temperature_before_stop_run">
+       <property name="text">
+        <string>115</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <widget class="QLineEdit" name="lineEdit_losses_result">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>Допустимое:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0">
+      <widget class="QLabel" name="label_14">
+       <property name="text">
+        <string>Вибрация BQ6, мм/с</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="2" rowspan="2">
+      <widget class="QLabel" name="label_16">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Продолжать обкатку &lt;/p&gt;&lt;p&gt;до температуры, гр. С&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="0">
+      <widget class="QCheckBox" name="checkBox_second_run_in">
+       <property name="text">
+        <string>Вторая обкатка</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>Измеренное:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_11">
+       <property name="text">
+        <string>Вибрация BQ3, мм/с</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="label_12">
+       <property name="text">
+        <string>Вибрация BQ4, мм/с</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="1">
+      <widget class="QLineEdit" name="lineEdit_vibrationBQ6_fact">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QLineEdit" name="lineEdit_vibrationBQ4_fact">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QLineEdit" name="lineEdit_current_nominal">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="0">
+      <widget class="QCheckBox" name="checkBox_first_run_in">
+       <property name="text">
+        <string>Первая обкатка</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_9">
+       <property name="text">
+        <string>Вибрация BQ1, мм/с</string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="3">
+      <widget class="QPushButton" name="pushButton_save">
+       <property name="text">
+        <string>Сохранить</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="label_13">
+       <property name="text">
+        <string>Вибрация BQ5, мм/с</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="3">
+      <widget class="QPushButton" name="pushButton_stop">
+       <property name="text">
+        <string>Стоп</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="3">
+      <widget class="QPushButton" name="pushButton_start">
+       <property name="text">
+        <string>Начать обкатку</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="3">
+      <widget class="QLineEdit" name="lineEdit_vibration_result">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="1">
+      <widget class="QLineEdit" name="lineEdit_temperature">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="lineEdit_current_fact">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QLineEdit" name="lineEdit_current_result">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>Ток холостого хода, А</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLineEdit" name="lineEdit_vibrationBQ2_fact">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="lineEdit_voltage_fact">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLineEdit" name="lineEdit_voltage_nominal">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLineEdit" name="lineEdit_high_voltage">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" colspan="3">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;Напряжение трансформатора на высокой стороне, В&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

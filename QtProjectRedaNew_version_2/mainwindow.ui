@@ -1,0 +1,2769 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1308</width>
+    <height>818</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <property name="elideMode">
+       <enum>Qt::ElideNone</enum>
+      </property>
+      <widget class="QWidget" name="tab_Base">
+       <attribute name="title">
+        <string>База данных</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0" colspan="2">
+         <widget class="QTableView" name="tableView_Base"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="pushButton_addBase">
+          <property name="text">
+           <string>Добавить</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="pushButton_deleteBase">
+          <property name="text">
+           <string>Удалить</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_connect">
+       <attribute name="title">
+        <string>Настройка подключений</string>
+       </attribute>
+       <widget class="QTabWidget" name="tabWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>1261</width>
+          <height>711</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>3</number>
+        </property>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="title">
+          <string>Измерительные приборы</string>
+         </attribute>
+         <widget class="QWidget" name="gridLayoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>20</y>
+            <width>301</width>
+            <height>199</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="5" column="0">
+            <widget class="QLabel" name="label_45">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Стоповые биты</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" colspan="2">
+            <widget class="QLabel" name="label_47">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Настройка подключения миллиомметра МИКО-9А&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="1">
+            <widget class="QLineEdit" name="lineEdit_RESPONSE_TIME_miko">
+             <property name="text">
+              <string>1000</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLineEdit" name="lineEdit_PARITY_miko">
+             <property name="text">
+              <string>QSerialPort::NoParity</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0">
+            <widget class="QLabel" name="label_46">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Таймаут, мс</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QLineEdit" name="lineEdit_DATA_BITS_miko">
+             <property name="text">
+              <string>8</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_43">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Четность</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_42">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Скорость, бит/с</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="label_44">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Биты данных</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="lineEdit_PORT_miko">
+             <property name="text">
+              <string>COM7</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_41">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Последовательный порт</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="lineEdit_BAUDS_miko">
+             <property name="text">
+              <string>115200</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QLineEdit" name="lineEdit_STOP_BITS_miko">
+             <property name="text">
+              <string>1</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="0">
+            <widget class="QLabel" name="label_79">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Адрес устройства</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="1">
+            <widget class="QLineEdit" name="lineEdit__int_server_Addres_miko">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 127);</string>
+             </property>
+             <property name="text">
+              <string>0x55</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="gridLayoutWidget_2">
+          <property name="geometry">
+           <rect>
+            <x>750</x>
+            <y>20</y>
+            <width>351</width>
+            <height>181</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_7">
+           <item row="6" column="1">
+            <widget class="QLineEdit" name="lineEdit_RESPONSE_TIME_CA6547">
+             <property name="text">
+              <string>QSerialPort::FlowControl::NoFlowControl</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0">
+            <widget class="QLabel" name="label_57">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>FlowControl</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel" name="label_56">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Стоповые биты</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="lineEdit_PORT_CA6547">
+             <property name="text">
+              <string>COM1</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_58">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Четность</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_61">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Последовательный порт</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="label_60">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Биты данных</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QLineEdit" name="lineEdit_DATA_BITS_CA6547">
+             <property name="text">
+              <string>QSerialPort::DataBits::Data8</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="lineEdit_BAUDS_CA6547">
+             <property name="text">
+              <string>QSerialPort::BaudRate::Baud9600</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QLineEdit" name="lineEdit_STOP_BITS_CA6547">
+             <property name="text">
+              <string>QSerialPort::StopBits::OneStop</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_59">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Скорость, бит/с</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLineEdit" name="lineEdit_PARITY_CA6547">
+             <property name="text">
+              <string>QSerialPort::Parity::NoParity</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" colspan="2">
+            <widget class="QLabel" name="label_112">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Настройка подключения мегаомметра CA6547&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="gridLayoutWidget_3">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>20</y>
+            <width>348</width>
+            <height>199</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_8">
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="lineEdit_PORT_Danfoss">
+             <property name="text">
+              <string>COM7</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" colspan="2">
+            <widget class="QLabel" name="label_69">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Настройка подключения ПЧ Danfoss&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QLineEdit" name="lineEdit_STOP_BITS_Danfoss">
+             <property name="text">
+              <string>1</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="1">
+            <widget class="QLineEdit" name="lineEdit_RESPONSE_TIME_Danfoss">
+             <property name="text">
+              <string>1000</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_68">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Последовательный порт</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_65">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Четность</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLineEdit" name="lineEdit_PARITY_Danfoss">
+             <property name="text">
+              <string>QSerialPort::NoParity</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0">
+            <widget class="QLabel" name="label_64">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Таймаут, мс</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QLineEdit" name="lineEdit_DATA_BITS_Danfoss">
+             <property name="text">
+              <string>8</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="lineEdit_BAUDS_Danfoss">
+             <property name="text">
+              <string>115200</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="label_67">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Биты данных</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel" name="label_63">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Стоповые биты</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_66">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Скорость, бит/с</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="0">
+            <widget class="QLabel" name="label_113">
+             <property name="text">
+              <string>Адрес устройства</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="1">
+            <widget class="QLineEdit" name="lineEdit__int_server_Addres_Danfoss">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 127);</string>
+             </property>
+             <property name="text">
+              <string>0x06</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab">
+         <attribute name="title">
+          <string>Модуль дискретных выходов ОВЕН МУ 110-224.8Р</string>
+         </attribute>
+         <widget class="QWidget" name="formLayoutWidget_2">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>711</width>
+            <height>431</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_9">
+           <item row="9" column="1">
+            <widget class="QLineEdit" name="lineEdit_26">
+             <property name="text">
+              <string>0x01</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="label_90">
+             <property name="text">
+              <string>Биты данных</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QLineEdit" name="lineEdit_14">
+             <property name="text">
+              <string>1</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="3">
+            <widget class="QLabel" name="label_93">
+             <property name="text">
+              <string>Выход 0, включение реле магаомметра </string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="lineEdit_11">
+             <property name="text">
+              <string>115200</string>
+             </property>
+            </widget>
+           </item>
+           <item row="12" column="1">
+            <widget class="QLineEdit" name="lineEdit">
+             <property name="text">
+              <string>0x04</string>
+             </property>
+            </widget>
+           </item>
+           <item row="13" column="3">
+            <widget class="QLabel" name="label_78">
+             <property name="text">
+              <string>Выход 6, реле измерение сопротивления обмотки UW</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="1">
+            <widget class="QLineEdit" name="lineEdit_16">
+             <property name="text">
+              <string>0x00</string>
+             </property>
+            </widget>
+           </item>
+           <item row="11" column="3">
+            <widget class="QLabel" name="label_70">
+             <property name="text">
+              <string>Выход 4, реле измерение сопротивления обмотки UV</string>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="1">
+            <widget class="QLineEdit" name="lineEdit_int_addres_7">
+             <property name="text">
+              <string>0x02</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_87">
+             <property name="text">
+              <string>Последовательный порт</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" colspan="4">
+            <widget class="QLabel" name="label_77">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Настройка модуля дискретных выходов ОВЕН МУ 110-224.8Р&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QLineEdit" name="lineEdit_13">
+             <property name="text">
+              <string>8</string>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="3">
+            <widget class="QLabel" name="label_76">
+             <property name="text">
+              <string>Выход 3, cброс питания модуля 7019</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="2">
+            <widget class="QLabel" name="label_72">
+             <property name="text">
+              <string>Адрес устройства</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="lineEdit_10">
+             <property name="text">
+              <string>COM7</string>
+             </property>
+            </widget>
+           </item>
+           <item row="14" column="1">
+            <widget class="QLineEdit" name="lineEdit_27">
+             <property name="text">
+              <string>0x06</string>
+             </property>
+            </widget>
+           </item>
+           <item row="12" column="3">
+            <widget class="QLabel" name="label_73">
+             <property name="text">
+              <string>Выход 5, реле измерение сопротивления обмотки VW</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_88">
+             <property name="text">
+              <string>Скорость, бит/с</string>
+             </property>
+            </widget>
+           </item>
+           <item row="15" column="1">
+            <widget class="QLineEdit" name="lineEdit_28">
+             <property name="text">
+              <string>0x07</string>
+             </property>
+            </widget>
+           </item>
+           <item row="11" column="1">
+            <widget class="QLineEdit" name="lineEdit_quint16_size_2">
+             <property name="text">
+              <string>0x03</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0">
+            <widget class="QLabel" name="label_92">
+             <property name="text">
+              <string>Таймаут, мс</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel" name="label_91">
+             <property name="text">
+              <string>Стоповые биты</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="0">
+            <widget class="QLabel" name="label_71">
+             <property name="text">
+              <string>int serverAddress</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_89">
+             <property name="text">
+              <string>Четность</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="1">
+            <widget class="QLineEdit" name="lineEdit_15">
+             <property name="text">
+              <string>1000</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLineEdit" name="lineEdit_12">
+             <property name="text">
+              <string>QSerialPort::NoParity</string>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="3">
+            <widget class="QLabel" name="label_62">
+             <property name="text">
+              <string>TextLabel</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="1">
+            <widget class="QLineEdit" name="lineEdit_int_server_Addres_2">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 127);</string>
+             </property>
+             <property name="text">
+              <string>0x0A</string>
+             </property>
+            </widget>
+           </item>
+           <item row="13" column="1">
+            <widget class="QLineEdit" name="lineEdit_2">
+             <property name="text">
+              <string>0x05</string>
+             </property>
+            </widget>
+           </item>
+           <item row="14" column="3">
+            <widget class="QLabel" name="label_110">
+             <property name="text">
+              <string>TextLabel</string>
+             </property>
+            </widget>
+           </item>
+           <item row="15" column="3">
+            <widget class="QLabel" name="label_111">
+             <property name="text">
+              <string>TextLabel</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="2" rowspan="8">
+            <widget class="QLabel" name="label_75">
+             <property name="text">
+              <string>Номер дискретного вывода</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="0" rowspan="8">
+            <widget class="QLabel" name="label_74">
+             <property name="text">
+              <string>int address</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_3">
+         <attribute name="title">
+          <string>Модуль дискретных входов ОВЕН МУ 110-224.16ДН</string>
+         </attribute>
+         <widget class="QWidget" name="formLayoutWidget_3">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>681</width>
+            <height>613</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_10">
+           <item row="8" column="1">
+            <widget class="QLineEdit" name="lineEdit_3">
+             <property name="text">
+              <string>0x00</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="1">
+            <widget class="QLineEdit" name="lineEdit_20">
+             <property name="text">
+              <string>1000</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel" name="label_102">
+             <property name="text">
+              <string>Стоповые биты</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" colspan="4">
+            <widget class="QLabel" name="label_106">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Настройка модуля дискретных входов ОВЕН МУ 110-224.16ДН&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0">
+            <widget class="QLabel" name="label_103">
+             <property name="text">
+              <string>Таймаут, мс</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="2">
+            <widget class="QLabel" name="label_98">
+             <property name="text">
+              <string>Адрес устройства</string>
+             </property>
+            </widget>
+           </item>
+           <item row="18" column="1">
+            <widget class="QLineEdit" name="lineEdit_33">
+             <property name="text">
+              <string>0x10</string>
+             </property>
+            </widget>
+           </item>
+           <item row="19" column="1">
+            <widget class="QLineEdit" name="lineEdit_34">
+             <property name="text">
+              <string>0x11</string>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="3">
+            <widget class="QLabel" name="label_105">
+             <property name="text">
+              <string>Вход 3</string>
+             </property>
+            </widget>
+           </item>
+           <item row="22" column="1">
+            <widget class="QLineEdit" name="lineEdit_37">
+             <property name="text">
+              <string>0x14</string>
+             </property>
+            </widget>
+           </item>
+           <item row="12" column="3">
+            <widget class="QLabel" name="label_94">
+             <property name="text">
+              <string>Вход 5</string>
+             </property>
+            </widget>
+           </item>
+           <item row="11" column="1">
+            <widget class="QLineEdit" name="lineEdit_quint16_size_3">
+             <property name="text">
+              <string>0x03</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="1">
+            <widget class="QLineEdit" name="lineEdit_int_server_Addres_3">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 127);</string>
+             </property>
+             <property name="text">
+              <string>0x10</string>
+             </property>
+            </widget>
+           </item>
+           <item row="14" column="1">
+            <widget class="QLineEdit" name="lineEdit_29">
+             <property name="text">
+              <string>0x06</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QLineEdit" name="lineEdit_19">
+             <property name="text">
+              <string>8</string>
+             </property>
+            </widget>
+           </item>
+           <item row="13" column="3">
+            <widget class="QLabel" name="label_101">
+             <property name="text">
+              <string>Вход 6</string>
+             </property>
+            </widget>
+           </item>
+           <item row="20" column="1">
+            <widget class="QLineEdit" name="lineEdit_35">
+             <property name="text">
+              <string>0x12</string>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="3">
+            <widget class="QLabel" name="label_109">
+             <property name="text">
+              <string>Вход 2</string>
+             </property>
+            </widget>
+           </item>
+           <item row="17" column="1">
+            <widget class="QLineEdit" name="lineEdit_32">
+             <property name="text">
+              <string>0x09</string>
+             </property>
+            </widget>
+           </item>
+           <item row="13" column="1">
+            <widget class="QLineEdit" name="lineEdit_22">
+             <property name="text">
+              <string>0x05</string>
+             </property>
+            </widget>
+           </item>
+           <item row="15" column="1">
+            <widget class="QLineEdit" name="lineEdit_30">
+             <property name="text">
+              <string>0x07</string>
+             </property>
+            </widget>
+           </item>
+           <item row="11" column="3">
+            <widget class="QLabel" name="label_100">
+             <property name="text">
+              <string>Вход 4</string>
+             </property>
+            </widget>
+           </item>
+           <item row="16" column="1">
+            <widget class="QLineEdit" name="lineEdit_31">
+             <property name="text">
+              <string>0x08</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_96">
+             <property name="text">
+              <string>Последовательный порт</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_99">
+             <property name="text">
+              <string>Четность</string>
+             </property>
+            </widget>
+           </item>
+           <item row="21" column="1">
+            <widget class="QLineEdit" name="lineEdit_36">
+             <property name="text">
+              <string>0x13</string>
+             </property>
+            </widget>
+           </item>
+           <item row="12" column="1">
+            <widget class="QLineEdit" name="lineEdit_17">
+             <property name="text">
+              <string>0x04</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QLineEdit" name="lineEdit_25">
+             <property name="text">
+              <string>1</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLineEdit" name="lineEdit_21">
+             <property name="text">
+              <string>QSerialPort::NoParity</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="lineEdit_24">
+             <property name="text">
+              <string>115200</string>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="1">
+            <widget class="QLineEdit" name="lineEdit_23">
+             <property name="text">
+              <string>0x01</string>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="1">
+            <widget class="QLineEdit" name="lineEdit_int_addres_8">
+             <property name="text">
+              <string>0x02</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="label_104">
+             <property name="text">
+              <string>Биты данных</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_97">
+             <property name="text">
+              <string>Скорость, бит/с</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="lineEdit_18">
+             <property name="text">
+              <string>COM7</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="0">
+            <widget class="QLabel" name="label_95">
+             <property name="text">
+              <string>int serverAddress</string>
+             </property>
+            </widget>
+           </item>
+           <item row="23" column="1">
+            <widget class="QLineEdit" name="lineEdit_38">
+             <property name="text">
+              <string>0x15</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="0" rowspan="16">
+            <widget class="QLabel" name="label_107">
+             <property name="text">
+              <string>int address</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="2" rowspan="16">
+            <widget class="QLabel" name="label_108">
+             <property name="text">
+              <string>Номер дискретного ввода</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="3">
+            <widget class="QLabel" name="label_114">
+             <property name="text">
+              <string>Вход 1</string>
+             </property>
+            </widget>
+           </item>
+           <item row="14" column="3">
+            <widget class="QLabel" name="label_115">
+             <property name="text">
+              <string>Вход 7</string>
+             </property>
+            </widget>
+           </item>
+           <item row="15" column="3">
+            <widget class="QLabel" name="label_116">
+             <property name="text">
+              <string>Вход 8</string>
+             </property>
+            </widget>
+           </item>
+           <item row="16" column="3">
+            <widget class="QLabel" name="label_117">
+             <property name="text">
+              <string>Вход 9</string>
+             </property>
+            </widget>
+           </item>
+           <item row="17" column="3">
+            <widget class="QLabel" name="label_118">
+             <property name="text">
+              <string>Вход 10</string>
+             </property>
+            </widget>
+           </item>
+           <item row="18" column="3">
+            <widget class="QLabel" name="label_119">
+             <property name="text">
+              <string>Вход 11</string>
+             </property>
+            </widget>
+           </item>
+           <item row="19" column="3">
+            <widget class="QLabel" name="label_120">
+             <property name="text">
+              <string>Вход 12</string>
+             </property>
+            </widget>
+           </item>
+           <item row="20" column="3">
+            <widget class="QLabel" name="label_121">
+             <property name="text">
+              <string>Вход 13</string>
+             </property>
+            </widget>
+           </item>
+           <item row="21" column="3">
+            <widget class="QLabel" name="label_122">
+             <property name="text">
+              <string>Вход 14</string>
+             </property>
+            </widget>
+           </item>
+           <item row="22" column="3">
+            <widget class="QLabel" name="label_123">
+             <property name="text">
+              <string>Вход 15</string>
+             </property>
+            </widget>
+           </item>
+           <item row="23" column="3">
+            <widget class="QLabel" name="label_124">
+             <property name="text">
+              <string>Вход 16</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_4">
+         <attribute name="title">
+          <string>Модуль аналоговых входов ICP_CON_7019</string>
+         </attribute>
+         <widget class="QWidget" name="formLayoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>541</width>
+            <height>407</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_6">
+           <item row="6" column="0">
+            <widget class="QLabel" name="label_85">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Таймаут, мс</string>
+             </property>
+            </widget>
+           </item>
+           <item row="12" column="1">
+            <widget class="QLineEdit" name="lineEdit_40">
+             <property name="text">
+              <string>0x04</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_81">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Скорость, бит/с</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="1">
+            <widget class="QLineEdit" name="lineEdit_9">
+             <property name="text">
+              <string>1000</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="lineEdit_4">
+             <property name="text">
+              <string>COM7</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_82">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Четность</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLineEdit" name="lineEdit_6">
+             <property name="text">
+              <string>QSerialPort::NoParity</string>
+             </property>
+            </widget>
+           </item>
+           <item row="15" column="2">
+            <widget class="QLabel" name="label_54">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Количество регистров</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel" name="label_84">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Стоповые биты</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QLabel" name="label_86">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Изменяется на 38400 при работе с ПЧ</string>
+             </property>
+            </widget>
+           </item>
+           <item row="15" column="1">
+            <widget class="QLineEdit" name="lineEdit_quint16_size">
+             <property name="text">
+              <string>0x01</string>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="1">
+            <widget class="QLineEdit" name="lineEdit_43">
+             <property name="text">
+              <string>0x01</string>
+             </property>
+            </widget>
+           </item>
+           <item row="14" column="1">
+            <widget class="QLineEdit" name="lineEdit_int_addres_6">
+             <property name="text">
+              <string>0x06</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_80">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Последовательный порт</string>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="1">
+            <widget class="QLineEdit" name="lineEdit_42">
+             <property name="text">
+              <string>0x02</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="lineEdit_5">
+             <property name="text">
+              <string>115200</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QLineEdit" name="lineEdit_7">
+             <property name="text">
+              <string>8</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" colspan="4">
+            <widget class="QLabel" name="label_50">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Настройка модуля аналоговых входов ICP_CON_7019&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="0">
+            <widget class="QLabel" name="label_51">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>int serverAddress</string>
+             </property>
+            </widget>
+           </item>
+           <item row="15" column="0">
+            <widget class="QLabel" name="label_49">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>quint16 size</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QLineEdit" name="lineEdit_8">
+             <property name="text">
+              <string>1</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="2">
+            <widget class="QLabel" name="label_52">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Адрес устройства</string>
+             </property>
+            </widget>
+           </item>
+           <item row="14" column="3">
+            <widget class="QLabel" name="label_55">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Датчик температуры</string>
+             </property>
+            </widget>
+           </item>
+           <item row="11" column="1">
+            <widget class="QLineEdit" name="lineEdit_41">
+             <property name="text">
+              <string>0x03</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="1">
+            <widget class="QLineEdit" name="lineEdit_int_server_Addres">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 127);</string>
+             </property>
+             <property name="text">
+              <string>0x57</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="label_83">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Биты данных</string>
+             </property>
+            </widget>
+           </item>
+           <item row="13" column="1">
+            <widget class="QLineEdit" name="lineEdit_39">
+             <property name="text">
+              <string>0x05</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="1">
+            <widget class="QLineEdit" name="lineEdit_44">
+             <property name="text">
+              <string>0x00</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="0" rowspan="7">
+            <widget class="QLabel" name="label_48">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>int address</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="2" rowspan="7">
+            <widget class="QLabel" name="label_53">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Номер аналогового ввода</string>
+             </property>
+            </widget>
+           </item>
+           <item row="13" column="3">
+            <widget class="QLabel" name="label_125">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Датчик вибрации BQ6</string>
+             </property>
+            </widget>
+           </item>
+           <item row="12" column="3">
+            <widget class="QLabel" name="label_126">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Датчик вибрации BQ5</string>
+             </property>
+            </widget>
+           </item>
+           <item row="11" column="3">
+            <widget class="QLabel" name="label_127">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Датчик вибрации BQ4</string>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="3">
+            <widget class="QLabel" name="label_128">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Датчик вибрации BQ3</string>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="3">
+            <widget class="QLabel" name="label_129">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Датчик вибрации BQ2</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="3">
+            <widget class="QLabel" name="label_130">
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string>Датчик вибрации BQ1</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_test">
+       <attribute name="title">
+        <string>Тестирование</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QLabel" name="label_image">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="Resource.qrc">:/img/logo.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_experience_1">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>1. Измерение напряжения пробоя масла холодного ПЭД</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_experience_2">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+              <kerning>true</kerning>
+             </font>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="text">
+             <string>2. Измерение сопротивления обмоток холодного ПЭД</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_experience_3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>3. Измерение сопротивления изоляции холодного ПЭД</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_experience_4">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>4. Измерение момента проворачивания вала</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_7">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_experience_5">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>5. Опыт короткого замыкания</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_8">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_experience_6">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>6. Определение напряжения трогания</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_9">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_experience_7">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>7. Обкатка ПЭД</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_10">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_experience_8">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>8. Измерение выбега ПЭД</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_11">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_experience_9">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>9. Измерение сопротивления обмоток горячего ПЭД</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_12">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_experience_10">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>10. Измерение сопротивления изоляции горячего ПЭД</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_13">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_experience_11">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>11. Измерение напряжения пробоя масла горячего ПЭД</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_14">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_experience_12">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>12. Ипытание межвитк. изо-ции обмотки на эл. прочн. (1,3Uн)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_15">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_experience_13">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>13. Ипытание изо-ции обмотки на эл. прочн. отн. корпуса</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_16">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_experience_14">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>14. Проверка ЭД на герметичность маслом</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_17">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_experience_15">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>15. Показания ТМС</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Типы ПЭД&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_search">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="listWidget_typePED"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="25" column="0">
+           <spacer name="verticalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="21" column="0">
+           <widget class="QLabel" name="label_20">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Крутящий момент, кгс*м</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="1">
+           <widget class="QLineEdit" name="lineEdit_voltage_of_SEM"/>
+          </item>
+          <item row="24" column="0">
+           <widget class="QLabel" name="label_23">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;
+&lt;p style=&quot;line-height:0.15&quot;, align=&quot;left&quot;&gt;&lt;span&gt;Испыт. изол. обм. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;line-height:0.15&quot;, align=&quot;left&quot;&gt;&lt;span&gt;на эл. прочн. отн. корп., В&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;line-height:0.15&quot;, align=&quot;left&quot;&gt;&lt;span&gt;на эл. прочн. отн. корп., В&lt;/span&gt;&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="0">
+           <widget class="QLabel" name="label_8">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Сопротивление обмтотки (20С°), Ом</string>
+            </property>
+           </widget>
+          </item>
+          <item row="14" column="0">
+           <widget class="QLabel" name="label_13">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Ток к.з., А</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <spacer name="verticalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="7" column="0">
+           <widget class="QLabel" name="label_6">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Ток, А</string>
+            </property>
+           </widget>
+          </item>
+          <item row="17" column="0">
+           <widget class="QLabel" name="label_16">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Напряжение х.х., В</string>
+            </property>
+           </widget>
+          </item>
+          <item row="15" column="1">
+           <widget class="QLineEdit" name="lineEdit_LossesShortCircuit_of_SEM"/>
+          </item>
+          <item row="8" column="0">
+           <widget class="QLabel" name="label_7">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Частота вращения, об/мин</string>
+            </property>
+           </widget>
+          </item>
+          <item row="16" column="0">
+           <widget class="QLabel" name="label_15">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Ток х.х., А</string>
+            </property>
+           </widget>
+          </item>
+          <item row="11" column="1">
+           <widget class="QLineEdit" name="lineEdit_AccelerationVoltage_of_SEM"/>
+          </item>
+          <item row="7" column="1">
+           <widget class="QLineEdit" name="lineEdit_current_of_SEM"/>
+          </item>
+          <item row="23" column="0">
+           <widget class="QLabel" name="label_22">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;
+&lt;p style=&quot;line-height:0.15&quot;, align=&quot;left&quot;&gt;&lt;span&gt;Испыт. межвитк. изол&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;line-height:0.15&quot;, align=&quot;left&quot;&gt;&lt;span&gt;на эл. прочность, В&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;line-height:0.15&quot;, align=&quot;left&quot;&gt;&lt;span&gt;на эл. прочность, В&lt;/span&gt;&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+
+</string>
+            </property>
+           </widget>
+          </item>
+          <item row="24" column="1">
+           <widget class="QLineEdit" name="lineEdit_TestingIsolationBody_of_SEM">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="23" column="1">
+           <widget class="QLineEdit" name="lineEdit_TestingIsolationInterTurn_of_SEM"/>
+          </item>
+          <item row="18" column="1">
+           <widget class="QLineEdit" name="lineEdit_LossesIdling_of_SEM"/>
+          </item>
+          <item row="21" column="1">
+           <widget class="QLineEdit" name="lineEdit_Torque_of_SEM"/>
+          </item>
+          <item row="10" column="0">
+           <widget class="QLabel" name="label_9">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Сопротоивление изоляции, МОм</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="label_3">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Напряжение, В</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLineEdit" name="lineEdit_power_of_SEM"/>
+          </item>
+          <item row="20" column="0">
+           <widget class="QLabel" name="label_19">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Вибрация, мм/с</string>
+            </property>
+           </widget>
+          </item>
+          <item row="20" column="1">
+           <widget class="QLineEdit" name="lineEdit_Vibration_of_SEM"/>
+          </item>
+          <item row="26" column="0" colspan="2">
+           <widget class="QLabel" name="label_statusRele">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="22" column="1">
+           <widget class="QLineEdit" name="lineEdit_LossesHot_of_SEM"/>
+          </item>
+          <item row="10" column="1">
+           <widget class="QLineEdit" name="lineEdit_ResistanceIsolation_of_SEM"/>
+          </item>
+          <item row="9" column="1">
+           <widget class="QLineEdit" name="lineEdit_ResistanceWinding_of_SEM"/>
+          </item>
+          <item row="19" column="0">
+           <widget class="QLabel" name="label_18">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Выбег, с</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLineEdit" name="lineEdit_type_of_SEM">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="11" column="0">
+           <widget class="QLabel" name="label_10">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Напряжение разгона, В</string>
+            </property>
+           </widget>
+          </item>
+          <item row="13" column="0">
+           <widget class="QLabel" name="label_12">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Напряжение к.з., В</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0" colspan="2">
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Номинальные параметры ПЭД&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="17" column="1">
+           <widget class="QLineEdit" name="lineEdit_VoltageIdling_of_SEM"/>
+          </item>
+          <item row="12" column="1">
+           <widget class="QLineEdit" name="lineEdit_TorqueTurning_of_SEM"/>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_2">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Тип</string>
+            </property>
+           </widget>
+          </item>
+          <item row="16" column="1">
+           <widget class="QLineEdit" name="lineEdit_CurrentIdling_of_SEM"/>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="label_4">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Мощность, кВт</string>
+            </property>
+           </widget>
+          </item>
+          <item row="15" column="0">
+           <widget class="QLabel" name="label_14">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Потери к.з., кВт</string>
+            </property>
+           </widget>
+          </item>
+          <item row="18" column="0">
+           <widget class="QLabel" name="label_17">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Потери х.х., кВт</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="1">
+           <widget class="QLineEdit" name="lineEdit_RoundPerMinute_of_SEM"/>
+          </item>
+          <item row="22" column="0">
+           <widget class="QLabel" name="label_21">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Потери в нагр. сост., кВт</string>
+            </property>
+           </widget>
+          </item>
+          <item row="12" column="0">
+           <widget class="QLabel" name="label_11">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Момент проворачивания, кгс*м</string>
+            </property>
+           </widget>
+          </item>
+          <item row="14" column="1">
+           <widget class="QLineEdit" name="lineEdit_CurrentShortCircuit_of_SEM"/>
+          </item>
+          <item row="13" column="1">
+           <widget class="QLineEdit" name="lineEdit_VoltageShortCircuit_of_SEM"/>
+          </item>
+          <item row="19" column="1">
+           <widget class="QLineEdit" name="lineEdit_RunOut_of_SEM"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_131">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Напряжение трансформатора &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;на высокой стороне, В&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="lineEdit_high_voltage"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="18" column="1">
+           <widget class="QLineEdit" name="lineEdit_firmwareVersion"/>
+          </item>
+          <item row="12" column="0">
+           <widget class="QLabel" name="label_34">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Диаметр вала, мм</string>
+            </property>
+           </widget>
+          </item>
+          <item row="14" column="1">
+           <widget class="QLineEdit" name="lineEdit_durationRun"/>
+          </item>
+          <item row="9" column="0">
+           <widget class="QLabel" name="label_31">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Проверка маркировки</string>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="1">
+           <widget class="QLineEdit" name="lineEdit_beating"/>
+          </item>
+          <item row="1" column="0" colspan="2">
+           <widget class="QPushButton" name="pushButton_newTest">
+            <property name="text">
+             <string>Новый тест</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_26">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Номер ЭД</string>
+            </property>
+           </widget>
+          </item>
+          <item row="17" column="1">
+           <widget class="QLineEdit" name="lineEdit_typeBlockTMS"/>
+          </item>
+          <item row="13" column="0">
+           <widget class="QLabel" name="label_35">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Тип ТМС/ конденсатора</string>
+            </property>
+           </widget>
+          </item>
+          <item row="18" column="0">
+           <widget class="QLabel" name="label_40">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Версия прошивки</string>
+            </property>
+           </widget>
+          </item>
+          <item row="11" column="1">
+           <widget class="QComboBox" name="comboBox_RTI">
+            <item>
+             <property name="text">
+              <string/>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>РС-3</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>АФ-15</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_25">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string>Номер протокола</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="label_28">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Тип масла</string>
+            </property>
+           </widget>
+          </item>
+          <item row="13" column="1">
+           <widget class="QLineEdit" name="lineEdit_typeTMS"/>
+          </item>
+          <item row="0" column="0">
+           <widget class="QPushButton" name="pushButtonc">
+            <property name="text">
+             <string>Найти протокол:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="15" column="1">
+           <widget class="QLineEdit" name="lineEdit_shaftDeparture"/>
+          </item>
+          <item row="7" column="0">
+           <widget class="QLabel" name="label_29">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Тип муфты</string>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="1">
+           <widget class="QComboBox" name="comboBox_markingCheck">
+            <item>
+             <property name="text">
+              <string/>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Соответствует</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Не соответствует</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="12" column="1">
+           <widget class="QLineEdit" name="lineEdit_shaftDiameter"/>
+          </item>
+          <item row="7" column="1">
+           <widget class="QLineEdit" name="lineEdit_typeCoupling"/>
+          </item>
+          <item row="8" column="1">
+           <widget class="QLineEdit" name="lineEdit_timeRun">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="label_27">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Категория исполнения</string>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="0">
+           <widget class="QLabel" name="label_32">
+            <property name="font">
+             <font>
+              <kerning>true</kerning>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;
+&lt;p style=&quot;line-height:0.15&quot;, align=&quot;left&quot;&gt;&lt;span&gt;Радиальное биение шлицевого&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;line-height:0.15&quot;, align=&quot;left&quot;&gt;&lt;span&gt;конца вала относительно&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;line-height:0.15&quot;, align=&quot;left&quot;&gt;&lt;span&gt;центрирующей поверхности&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;line-height:0.15&quot;, align=&quot;left&quot;&gt;&lt;span&gt;= 16 мм&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;line-height:0.15&quot;, align=&quot;left&quot;&gt;&lt;span&gt;= 16 мм&lt;/span&gt;&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+
+</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLineEdit" name="lineEdit_Number_of_SEM"/>
+          </item>
+          <item row="20" column="0" colspan="2">
+           <widget class="QPushButton" name="pushButton_saveProtocol">
+            <property name="text">
+             <string>Сохранить</string>
+            </property>
+           </widget>
+          </item>
+          <item row="14" column="0">
+           <widget class="QLabel" name="label_36">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Длительность обкатки</string>
+            </property>
+           </widget>
+          </item>
+          <item row="19" column="1">
+           <widget class="QLineEdit" name="lineEdit_operator"/>
+          </item>
+          <item row="11" column="0">
+           <widget class="QLabel" name="label_33">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Тип РТИ</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QComboBox" name="comboBox_performanceCategory">
+            <item>
+             <property name="text">
+              <string/>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Изготовление</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Капитальный ремонт</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Текущий ремонт</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Тест</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Модернизация</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QComboBox" name="comboBox_executionGroup">
+            <item>
+             <property name="text">
+              <string/>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Д1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Д2</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Д3</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="16" column="1">
+           <widget class="QComboBox" name="comboBox_articulation">
+            <item>
+             <property name="text">
+              <string/>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Эвольвента</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Прямозубое</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="lineEdit_NumberProtocol">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="0">
+           <widget class="QLabel" name="label_30">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Дата и время испытаний</string>
+            </property>
+           </widget>
+          </item>
+          <item row="15" column="0">
+           <widget class="QLabel" name="label_37">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Вылет вала</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="1">
+           <widget class="QComboBox" name="comboBox_typeOil">
+            <item>
+             <property name="text">
+              <string/>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>МДПН-С</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>МДПН</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>МДПНС-2</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="17" column="0">
+           <widget class="QLabel" name="label_39">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Тип блока ТМС</string>
+            </property>
+           </widget>
+          </item>
+          <item row="19" column="0">
+           <widget class="QLabel" name="label_132">
+            <property name="text">
+             <string>Оператор</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_24">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Группа исполнения</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="lineEdit_old_protocol"/>
+          </item>
+          <item row="16" column="0">
+           <widget class="QLabel" name="label_38">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Сочленение шлицевых соединений</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_list_protocols">
+       <attribute name="title">
+        <string>Список протоколов</string>
+       </attribute>
+       <widget class="QListWidget" name="listWidget_list_protocols">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>40</y>
+          <width>561</width>
+          <height>611</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_open_protocol">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>660</y>
+          <width>561</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Открыть протокол</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_work_protocol">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>700</y>
+          <width>561</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Работать с выбранным протоколом</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_search_protocols">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>561</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1308</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>window_experience_9</class>
+ <widget class="QDialog" name="window_experience_9">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>645</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="7" column="1">
+      <widget class="QLineEdit" name="lineEdit_resistanceW_hot">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="2">
+      <widget class="QLabel" name="label_18">
+       <property name="text">
+        <string>Om</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>%</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLineEdit" name="lineEdit_resistanceV_hot">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="2">
+      <widget class="QLabel" name="label_25">
+       <property name="text">
+        <string>гр. С</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="3">
+      <widget class="QPushButton" name="pushButton_stopMeasurementHotIsolationResistance">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Стоп</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QLabel" name="label_13">
+       <property name="text">
+        <string>Om</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="5">
+      <widget class="QPushButton" name="pushButton_startMeasurementHotIsolationResistance">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="text">
+        <string>Начать измерения</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="lineEdit_winding_UW_hot">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="lineEdit_winding_UV_hot">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>Измеренный</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>Om</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QLabel" name="label_17">
+       <property name="text">
+        <string>Om</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>R измеренное</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="7">
+      <widget class="QPushButton" name="pushButton_saveMeasurementHotIsolationResistance">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Сохранить</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QLineEdit" name="lineEdit_WindingUVWbalance_hot">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_14">
+       <property name="text">
+        <string>Фаза U</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="0">
+      <widget class="QCheckBox" name="checkBox_second_run_in">
+       <property name="text">
+        <string>Вторая обкатка</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="7">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Результат</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_15">
+       <property name="text">
+        <string>Фаза V</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QLineEdit" name="lineEdit_averageResistanceUVW_hot">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="lineEdit_winding_VW_hot">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="label_24">
+       <property name="text">
+        <string>Т корпуса</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="6">
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>%</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>Обмотка UV</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="label_20">
+       <property name="text">
+        <string>Среднее</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QLabel" name="label_11">
+       <property name="text">
+        <string>Om</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_16">
+       <property name="text">
+        <string>Фаза W</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Обмотка VW</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="5">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Допуск</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="2">
+      <widget class="QLabel" name="label_19">
+       <property name="text">
+        <string>Om</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="2">
+      <widget class="QLabel" name="label_21">
+       <property name="text">
+        <string>Om</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="5">
+      <widget class="QLineEdit" name="lineEdit_3">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_12">
+       <property name="text">
+        <string>Обмотка UW</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLineEdit" name="lineEdit_resistanceU_hot">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0">
+      <widget class="QCheckBox" name="checkBox_first_run_in">
+       <property name="tabletTracking">
+        <bool>false</bool>
+       </property>
+       <property name="acceptDrops">
+        <bool>false</bool>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Первая обкатка</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="7">
+      <widget class="QLineEdit" name="lineEdit_WindingBalanceResult_hot">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QLineEdit" name="lineEdit_temperatureResistance_hot">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3" colspan="5">
+      <widget class="QLabel" name="label_9">
+       <property name="text">
+        <string>Перекос сопротивления</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3" colspan="5">
+      <widget class="QLabel" name="label_measurement">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
