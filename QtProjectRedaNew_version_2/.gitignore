@@ -29,3 +29,13 @@ ui_*.h
 
 # Папки сборки
 */build-*/
+
+Makefile
+Makefile.*
+object_script.*
+.qmake.stash
+*.db
+userslocadmappdatalocaltemp*
+*.user*
+*.TMP
+tmp*
